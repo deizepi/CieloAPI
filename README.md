@@ -2,10 +2,14 @@
 API para uso do Webservice da Cielo e-commerce
 
 O uso da API é bastante simples, após baixar todos os arquivos basta importar a classe "Cielo.php" e então instanciar algum dos tipos de requisição.
+
 **Não se esqueça de ler o documento oficial da Cielo.**
+
 [Cielo Webservice V2.5.4](https://www.cielo.com.br/wps/wcm/connect/c682298e-4518-4e2b-8945-cef23e04b5ec/Cielo-E-commerce-Manual-do-Desenvolvedor-WebService-PT-V2.5.4.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=c682298e-4518-4e2b-8945-cef23e04b5ec)
 
-## <requisicao-transacao> ##
+<requisicao-transacao>
+
+##
 	
 	<?php
     require_once("Cielo.php");
