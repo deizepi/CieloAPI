@@ -7,9 +7,8 @@ O uso da API é bastante simples, após baixar todos os arquivos basta importar 
 
 [Cielo Webservice V2.5.4](https://www.cielo.com.br/wps/wcm/connect/c682298e-4518-4e2b-8945-cef23e04b5ec/Cielo-E-commerce-Manual-do-Desenvolvedor-WebService-PT-V2.5.4.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=c682298e-4518-4e2b-8945-cef23e04b5ec)
 
-<requisicao-transacao>
 
-##
+## requisicao-transacao
 	
 	<?php
     require_once("Cielo.php");
@@ -53,7 +52,7 @@ O uso da API é bastante simples, após baixar todos os arquivos basta importar 
 	}
 	?>
 	
-## <requisicao-token>
+## requisicao-token
 
 	<?php
     require_once("Cielo.php");
@@ -75,7 +74,7 @@ O uso da API é bastante simples, após baixar todos os arquivos basta importar 
 	}
 	?>
 	
-## <requisicao-autorizacao-tid>
+## requisicao-autorizacao-tid
 
 	<?php
     require_once("Cielo.php");
@@ -110,7 +109,7 @@ O uso da API é bastante simples, após baixar todos os arquivos basta importar 
 	}
 	?>
 
-## <requisicao-captura>
+## requisicao-captura
 
 	<?php
     require_once("Cielo.php");
@@ -149,7 +148,7 @@ O uso da API é bastante simples, após baixar todos os arquivos basta importar 
 	}
 	?>
 	
-## <requisicao-cancelamento>
+## requisicao-cancelamento
 
 	<?php
     require_once("Cielo.php");
@@ -186,7 +185,7 @@ O uso da API é bastante simples, após baixar todos os arquivos basta importar 
 	}
 	?>
 
-## <requisicao-consulta>
+## requisicao-consulta
 
 	<?php
     require_once("Cielo.php");
