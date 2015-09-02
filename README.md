@@ -4,8 +4,9 @@ API para uso do Webservice da Cielo e-commerce
 O uso da API é bastante simples, após baixar todos os arquivos basta importar a classe "Cielo.php" e então instanciar algum dos tipos de requisição.
 **Não se esqueça de ler o documento oficial da Cielo.**
 
-Ha ## <requisicao-transacao>
-
+## <requisicao-transacao>
+	
+	<?php
     require_once("Cielo.php");
 
     try { 
@@ -45,9 +46,11 @@ Ha ## <requisicao-transacao>
 	} catch(Exception $erro){
 		echo "Ocorreu o seguinte erro: ".$erro->getMessage()."\n";
 	}
+	?>
 	
-##<requisicao-token>
+## <requisicao-token>
 
+	<?php
     require_once("Cielo.php");
 
     try { 
@@ -65,9 +68,11 @@ Ha ## <requisicao-transacao>
 	} catch(Exception $erro){
 		echo "Ocorreu o seguinte erro: ".$erro->getMessage()."\n";
 	}
+	?>
 	
-##<requisicao-autorizacao-tid>
+## <requisicao-autorizacao-tid>
 
+	<?php
     require_once("Cielo.php");
 
     try { 
@@ -98,9 +103,11 @@ Ha ## <requisicao-transacao>
 	} catch(Exception $erro){
 		echo "Ocorreu o seguinte erro: ".$erro->getMessage()."\n";
 	}
+	?>
 
-##<requisicao-captura>
+## <requisicao-captura>
 
+	<?php
     require_once("Cielo.php");
 
     try { 
@@ -135,9 +142,11 @@ Ha ## <requisicao-transacao>
 	} catch(Exception $erro){
 		echo "Ocorreu o seguinte erro: ".$erro->getMessage()."\n";
 	}
+	?>
 	
-##<requisicao-cancelamento>
+## <requisicao-cancelamento>
 
+	<?php
     require_once("Cielo.php");
 
     try { 
@@ -170,9 +179,11 @@ Ha ## <requisicao-transacao>
 	} catch(Exception $erro){
 		echo "Ocorreu o seguinte erro: ".$erro->getMessage()."\n";
 	}
+	?>
 
-##<requisicao-consulta>
+## <requisicao-consulta>
 
+	<?php
     require_once("Cielo.php");
 
     try { 
@@ -205,6 +216,7 @@ Ha ## <requisicao-transacao>
 	} catch(Exception $erro){
 		echo "Ocorreu o seguinte erro: ".$erro->getMessage()."\n";
 	}
+	?>
 	
 Com o sistema homologado e devidamente cadastrado na Cielo, você deve alterar as constantes da classe Empresa.
 
