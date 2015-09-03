@@ -30,22 +30,10 @@ O uso da API é bastante simples, após baixar todos os arquivos basta importar 
 		$bairro 		= "Itaim Bibi";
 
 		$transacao = new RequisicaoTransacao($pedido, $valor, $produto, $parcelas, $cartao, $validade, $codigo);
-		$transacao->setCapturar(false); //Captura manual
-		$transacao->setCampoLivre("Cliente Premium"); //Campo livre
-		$transacao->setGerarToken(false); //gerar token do cartão
-		$transacao->setAVS($cep, $endereco, $numero, $complemento, $bairro); //serviço AVS (Address verification service)
-		$tPedido = $transacao->getPedido();
-		$tPedido->setMoeda(220); //dolar estadunidense
-		$tPedido->setIdioma("ES"); //idioma espanhol
-		$tPedido->setSoft_descriptor("compra teste"); //aparecerá na fatura do cliente
-		$tPedido->setDescricao("entregar até amanhã"); //descrição do pedido
+		$transacao->setAVS($cep, $endereco, $numero, $complemento, $bairro); 
 
 		$retorno = $transacao->enviar();
-		$tid = ($retorno->getTid()) ? $retorno->getTid() : false;
-
-		if($tid){
-			print_r($retorno);
-		}
+		print_r($retorno);
 
 	} catch(Exception $erro){
 		echo "Ocorreu o seguinte erro: ".$erro->getMessage()."\n";
